@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-inter;
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Container Styles */
+.container {
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 20px; /* Add padding for better spacing */
+    max-width: 1200px; /* Limit max width for better readability */
+}
+
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container img {
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    max-width: 150px; /* Make sure the image is not too large */
+    height: auto;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333; /* Darker text for better readability */
+}
+
+.article-container, .other-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background-color: #f3f4f6; /* Light gray for better contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Atur link hanya di dalam .article-container */
+.article-container a {
+    color: #3490dc; /* Warna link dalam .article-container */
+    text-decoration: underline; /* Tidak ada garis bawah secara default */
+}
+
+/* Tambahkan underscore (garis bawah) hanya di dalam .article-container saat di-hover */
+.article-container a:hover {
+    text-decoration: underline blue; /* Tambahkan garis bawah saat di-hover */
+    color: #1d68a7; /* Ubah warna saat di-hover */
+}
+
+/* Tambahkan underscore untuk link yang sudah dikunjungi hanya di .article-container */
+.article-container a:visited {
+    color: #6b7280; /* Warna link yang sudah dikunjungi */
+    text-decoration: underline; /* Garis bawah untuk link yang sudah dikunjungi */
+}
+
+/* Tambahkan underscore saat link di-klik (active) hanya di .article-container */
+.article-container a:active {
+    color: #ff0000; /* Ubah warna saat di-klik */
+    text-decoration: underline; /* Tambahkan garis bawah saat di-klik */
+}
+
+.article {
+    text-align: left; /* Pastikan artikel tetap sejajar kiri */
+    margin-bottom: 30px;
+}
+
+.article h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.article p {
+    font-size: 18px;
+    color: #555;
+}
+
+.article hr {
+    margin-top: 20px;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3490dc;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s; /* Added smooth transition */
+}
+
+.button:hover {
+    background-color: #1d68a7;
+    transform: scale(1.05); /* Slight scale on hover */
+}
+main.container {
+    margin-top: 50px; /* Ensure there's enough space between navbar and content */
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    width: 70%;
+    margin: 30px auto;
+    padding: 0; /* Remove padding */
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* Use padding and line-height relative to font-size */
+    padding-top: 1em; /* Add slight padding based on the font size */
+    padding-bottom: 0em;
+    line-height: 1; /* Adjust the line height to reduce gap below text */
+}
+
+header h1 {
+    font-size: 36px;
+    color: #2d3748;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1; /* Set line-height to be exactly the height of the font */
+}
+
+
+header nav {
+    margin-top: 15px; /* Space between header title and navigation */
+    display: inline-flex; /* Make navigation links inline and centered */
+    justify-content: center;
+}
+
+header nav a {
+    font-size: 18px; /* Font size for links */
+    color: #3490dc; /* Primary blue color for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between navigation links */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background transition */
+}
+
+header nav a:hover {
+    background-color: #1d68a7; /* Darker blue on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8fafc;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; /* Stack navigation vertically on small screens */
+    }
+
+    header nav a {
+        margin-bottom: 10px; /* Add spacing between links on mobile */
+    }
+
+    .container {
+        padding: 0 10px; /* Reduce container padding for mobile */
+    }
+
+    .blog-container {
+        width: 100%; /* Make blog full width on small screens */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .article-container {
+        padding: 10px 10px; /* Adjust padding for mobile */
+    }
+}
