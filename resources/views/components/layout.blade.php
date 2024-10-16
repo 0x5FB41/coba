@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'My Laravel App' }}</title>
     <!-- Link to CSS and JS -->
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.5/dist/cdn.min.js" defer></script>
 </head>
 <body class="bg-lightskyblue">

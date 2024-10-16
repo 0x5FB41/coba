@@ -13,8 +13,11 @@ body {
 }
 
 .container img {
+    margin: auto;
     border-radius: 50%;
     margin-bottom: 20px;
+    max-width: 400px; /* Increase the size */
+    height: auto;
 }
 
 .container p {

@@ -16,9 +16,8 @@ body {
 /* Container Styles */
 .container {
     margin: auto;
-    text-align: center;
     margin-top: 50px;
-    padding: 0 20px; /* Add padding for better spacing */
+    padding: 0 20px ; /* Add padding for better spacing */
     max-width: 1200px; /* Limit max width for better readability */
 }
 
@@ -30,16 +29,17 @@ body {
 .container img {
     margin: auto;
     border-radius: 50%;
-    margin-bottom: 20px;
-    max-width: 150px; /* Make sure the image is not too large */
+    margin: 10px auto 15px auto;
+    max-width: 300px; /* Make sure the image is not too large */
     height: auto;
 }
 
 .container p {
+    text-align: justify;
     font-size: 18px;
     line-height: 1.6;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 10px auto;
     color: #333; /* Darker text for better readability */
 }
 
@@ -53,6 +53,10 @@ body {
     background-color: #f3f4f6; /* Light gray for better contrast */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.other-container{
+    text-align: center;
 }
 
 /* Atur link hanya di dalam .article-container */
@@ -126,7 +130,7 @@ main.container {
 /* Header Styles */
 header {
     background-color: white;
-    width: 70%;
+    width: 800px;
     margin: 30px auto;
     padding: 0; /* Remove padding */
     text-align: center;
