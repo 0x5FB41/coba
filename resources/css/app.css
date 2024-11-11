@@ -11,8 +11,6 @@ body {
 }
 
 
-
-
 /* Container Styles */
 .container {
     margin: auto;
@@ -182,26 +180,74 @@ footer {
     color: #888;
 }
 
-/* Mobile adjustments */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    header nav {
-        flex-direction: column; /* Stack navigation vertically on small screens */
-    }
-
-    header nav a {
-        margin-bottom: 10px; /* Add spacing between links on mobile */
-    }
-
+    /* Adjust container */
     .container {
-        padding: 0 10px; /* Reduce container padding for mobile */
+        padding: 0 10px;
     }
 
-    .blog-container {
-        width: 100%; /* Make blog full width on small screens */
-        padding: 10px; /* Adjust padding for mobile */
+    /* Adjust header and navigation */
+    header {
+        width: 100%;
+        padding: 10px;
+        padding-top: 1em;
+        padding-bottom: 0em;
+        line-height: 1;
+        margin: 20px auto;
     }
 
+    header h1 {
+        font-size: 28px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Adjust article container */
     .article-container {
-        padding: 10px 10px; /* Adjust padding for mobile */
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .article h2 {
+        font-size: 24px;
+    }
+
+    .article p {
+        font-size: 16px;
+    }
+
+    /* Adjust buttons */
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* Adjust footer */
+    footer {
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    header h1 {
+        font-size: 24px;
+    }
+
+    .article h2 {
+        font-size: 20px;
+    }
+
+    .article p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 }
