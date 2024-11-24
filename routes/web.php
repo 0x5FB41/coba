@@ -12,7 +12,7 @@ Route::get('/profil', function () {
 });
 
 Route::get('/blog', function () {
-    $posts = Post::all(); // Mengambil semua post dari database
+    $posts = App\Models\Post::paginate(5); // Display 5 posts per page
     return view('blog', ['articles' => $posts]);
 });
 

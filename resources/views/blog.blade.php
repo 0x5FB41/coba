@@ -2,7 +2,9 @@
 <x-layout>
     <x-slot:title>Blog Saya</x-slot:title>
 
-    <x-header>Blog Saya</x-header>
+    <x-header>
+        Blog Saya
+    </x-header>
 
     <div class="article-container">
         @foreach($articles as $article)
@@ -14,5 +16,10 @@
                 <hr>
             </div>
         @endforeach
+    </div>
+
+    <!-- Add pagination links -->
+    <div class="pagination">
+        {{ $articles->links() }}
     </div>
 </x-layout>
